@@ -1,0 +1,119 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url(bg_main1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    text-shadow: 2px 2px 4px white;
+}
+
+.main-logo img
+{
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.row
+{
+    margin: auto;
+}
+
+.hero
+{
+    position: absolute;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 75px;
+}
+
+h1
+{
+    color: white;
+/*    text-transform: uppercase;*/
+    font-family: "Lato";
+    font-size: 50px;
+    text-align: center;
+    margin-top: 275px;
+}
+
+.button
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn
+{
+    border-radius: 4px;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: "Lato";
+}
+
+.btn-one
+{
+    background-color: cornflowerblue;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+    box-shadow: inset 0px 0px 0px 2px white;
+/*    border: 1.5px solid white;*/
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover
+{
+    background-color: darkorange;
+    transition: all 0.5s ease-in;
+}
