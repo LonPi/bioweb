@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Page Title</title>    
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href ="style.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
 
-    <header>
+    
+    <!--Main Navigation Bar-->
+    <nav>
         <div class="main-logo">
-            <img src="box_blue.png">
+            <img src="images/box_blue.png">
         </div>
-            
         <div class="row">
             <ul class="main-nav">
                 <li class="active"><a href=""> HOME </a></li>
-                <li><a href=""> ABOUT </a></li>
-                <li><a href=""> ART </a></li>
-                <li><a href=""> FOOD </a></li>
-                <li><a href=""> GAME </a></li>
-                <li><a href=""> CONTACT </a></li>
+                <li><a href="#about"> ABOUT </a></li>
+                <li><a href="#etc"> ETC </a></li>
+                <li><a href="#contact"> CONTACT </a></li>
             </ul>
         </div>
-        
-        <div class="hero">
+    </nav>
+    <!--Intro Section-->
+    <section id="intro">
+        <div class="container">
             <h1> Welcome to le Bioweb </h1>
             <div class="button">
-                <a href="" class="btn btn-one"> Play </a>
+                <a href="" class="btn btn-one"> START </a>
                 <a href="" class="btn btn-two"> Download a Copy </a>
             </div>
         </div>
-    </header>
+    </section>
+    
+    <!--About Me Section-->
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <div class="profile-pic">
+                <img src="images/pipo.jpg">
+            </div>
+            <p class="profile-info">I am a Computer Science fresh grad from the University of Guelph since 2019. <br><br>
+            
+            I enjoy exploring new fields of computer science, developing software in teams, and discussing possible solution with programming. I mainly work in C and Python, and am familiar with Java, HTML, CSS, Javascript, and PostgreSQL. I have also made web and android games through Unity and C#. <br><br>
+            
+            Beyond programming, I occupy my spare time with drawing, cooking, and weight lifting.
+            </p>
+        </div>
+    </section>
+    <!--ETC Section-->
+    <section id="etc">
+        <div>
+            <h2>ETC</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section id="contact">
+        <div>
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </section>
+    
+<!--
+    <footer>
+        <h3>Contact</h3>
+        <h3>Location</h3>
+        <h3>Privacy Policy</h3>
+    </footer>
+-->
     
 </body>
 </html>
