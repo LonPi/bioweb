@@ -1,57 +1,41 @@
 *
 {
-    box-sizing: border-box;
+/*    box-sizing: border-box;*/
     margin: 0;
     padding: 0;
+}
+
+html, body, #fullheight {
+/*    min-height: 100%;*/
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #292E38;
     color: floralwhite;
+    font-family: monospace;
     font-family: "Courier", sans-serif;
 }
 
-/*
-header
-{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-        url(bg_main1.jpg);
-    background-color: darkslategrey;
-    height: 100vh;
-    background-size: cover;
-    background-position: top;
-}
-*/
-
-body
-{
-    font-family: monospace;
-}
-
-h1
-{
-/*    text-transform: uppercase;*/
+h1 {
+    /*    text-transform: uppercase;*/
     font-family: "Lato";
     font-size: 50px;
     text-align: center;
     margin-top: 275px;
 }
-
 h2 {
     text-align: left;
     margin-left: 10%;
 }
 
-h3 {
-    font-size: 20px;
-    padding: 15px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-left: 20px;
-    font-weight: 500;
-    line-height: 2.7;
-    letter-spacing: 0.8px;
-}
-
 p{
     font-family: "Calibri";
-    font-size: 16px;
+    font-size: 20px;
 }
 
 section {
@@ -60,7 +44,13 @@ section {
     padding-bottom: 200px;
     min-height: 800px;
     text-align: center;
-    background-color: #292E38;
+}
+
+section .content-block {
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: left;
 }
 
 nav {
@@ -68,143 +58,33 @@ nav {
     text-align: center;
     position: fixed;
     width: 100%;
-    padding: 15px;
+/*    padding: 15px;*/
     z-index: 5;
-    background-color: rgba(0,0,0);
-    opacity: .75;
+    opacity: .95;
 }
 
-.main-nav
-{
-    list-style-type: none;
-    margin-top: 20px;
-    margin-right: 10px;
-    float: right;
+.modal-title {
+    color: black;
+    text-align: center;
 }
 
-.main-nav li
-{
-    display: inline-block;
-}
-
-.main-nav li a
-{
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-}
-
-.main-nav li.active a
-{
-    border: 1px solid white;
-}
-
-.main-nav li a:hover
-{
-    text-shadow: 2px 2px 4px white;
-}
-
-.main-logo img
-{
-    width: 50px;
-    height: auto;
-    float: left;
-    margin-top: 0px;
-    margin-left: 5px;
-}
-
-.row
-{
-    margin: auto;
-}
-
-/* Intro Styles */
-.container
-{
-    position: relative;
-    width: 100%;
+.fullpic {
+    background: 
+        linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0), 
+            rgba(0, 0, 50, 0.4)
+        ),
+        url(images/snowyard.jpg);
     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.button
-{
-    margin-top: 30px;
-    text-align: center;
-}
 
-.btn
-{
-    border-radius: 4px;
-    padding: 10px 30px;
-    text-decoration: none;
-    margin-right: 5px;
-    font-size: 15px;
-    font-family: "Lato";
-}
-
-.btn-one
-{
-    background-color: cornflowerblue;
-}
-
-.btn-two
-{
-    box-shadow: inset 0px 0px 0px 2px white;
-/*    border: 1.5px solid white;*/
-}
-
-.btn-two:hover
-{
-    background-color: darkorange;
-    transition: all 0.5s ease-in;
-}
-
-.profile-pic {
-    float: left;
-    position: relative;
-    margin-left: 15%;
-    margin-top: 5%;
-}
-
-.profile-info {
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 50%;
-    text-align: justify;
-}
-
-/* Footer Styles */
-footer {
-/*  margin-top: 50px;*/
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    background-color: #242f44;
-    z-index: 5;
-}
-
-footer h3 {
-    display: inline-block;
-    font-size: 14px;
-    background-color: #242f44;
-}
-
-/* Responsive Handlers */
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-        width: 80%;
-        padding: 0;
-    }
-    .main-nav {
-        width: 100%;
-    }
-}
-@media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .main-nav {
-        width: 100%;
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 15px;
     }
 }
