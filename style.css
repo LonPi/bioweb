@@ -33,7 +33,7 @@ h2 {
     margin-left: 10%;
 }
 
-p{
+.content-block p {
     font-family: "Calibri";
     font-size: 20px;
 }
@@ -46,11 +46,10 @@ section {
     text-align: center;
 }
 
-section .content-block {
+.content-block {
     margin-top: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    text-align: left;
 }
 
 nav {
@@ -63,6 +62,11 @@ nav {
     opacity: .95;
 }
 
+footer p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
 .modal-title {
     color: black;
     text-align: center;
@@ -73,15 +77,39 @@ nav {
         linear-gradient(
             to bottom, 
             rgba(0, 0, 0, 0), 
-            rgba(0, 0, 50, 0.4)
+            rgba(0, 0, 50, 0.6)
         ),
         url(images/snowyard.jpg);
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
+#about .content-block {
+    text-align: left;
+}
+
+#graphic img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#graphic img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#graphic img:hover {
+    opacity: 1;
+}
+
+#graphic .column {
+    width: 250px;
+    height: 250px;
+    margin-left: 5px;
+    margin-top: 40px;
+}
 
 @media screen and (max-width: 600px) {
     p {
